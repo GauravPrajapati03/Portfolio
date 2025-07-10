@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Projects</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.projects-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ffa500; /* Orange accent */
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.2); /* Blue glow */
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+.project-title {
+  font-size: 1.25rem;
+  padding: 16px;
+  background-color: #252525;
+  color: #ffa500; /* Orange */
+  margin: 0;
+  text-align: center;
+}
+
+.project-image {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+  </style>
+
+</head>
+<body>
+  <section class="projects-section">
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects-grid">
+      <!-- Project Card 1 -->
+      <div class="project-card">
+        <h3 class="project-title">Portfolio Website</h3>
+        <img src="images/project1.png" alt="Portfolio Website Screenshot" class="project-image" />
+      </div>
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <h3 class="project-title">ToDo App</h3>
+        <img src="images/project2.png" alt="ToDo App Screenshot" class="project-image" />
+      </div>
+      <!-- Project Card 3 -->
+      <div class="project-card">
+        <h3 class="project-title">Weather App</h3>
+        <img src="images/project3.png" alt="Weather App Screenshot" class="project-image" />
+      </div>
+      <!-- Project Card 4 -->
+      <div class="project-card">
+        <h3 class="project-title">Blog Platform</h3>
+        <img src="images/project4.png" alt="Blog Platform Screenshot" class="project-image" />
+      </div>
+    </div>
+  </section>
+</body>
+</html>
